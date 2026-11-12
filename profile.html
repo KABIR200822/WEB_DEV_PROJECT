@@ -10,13 +10,13 @@
     header { background: #172554; color: white; padding: 28px 8%; text-align: center; }
     nav { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 16px; }
     nav a { color: #dbeafe; text-decoration: none; font-weight: 600; }
-    main { max-width: 1050px; margin: 40px auto; padding: 0 20px; }
+    main { max-width: 1050px; margin: 40px auto; padding: 0 20px; overflow-x: auto; }
     .intro { text-align: center; line-height: 1.7; color: #475569; margin-bottom: 28px; }
-    .profiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
-    .card { background: white; border-radius: 16px; padding: 26px 20px; text-align: center; box-shadow: 0 8px 24px #17255412; }
-    .avatar { width: 76px; height: 76px; border-radius: 50%; background: #dbeafe; color: #1d4ed8; display: grid; place-items: center; font-size: 25px; font-weight: bold; margin: 0 auto 16px; }
-    h2 { font-size: 19px; margin: 0 0 10px; }
-    .course { color: #475569; line-height: 1.5; margin: 0; font-size: 14px; }
+    .profiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); min-width: 900px; gap: 12px; }
+    .card { background: white; border-radius: 16px; padding: 22px 8px; text-align: center; box-shadow: 0 8px 24px #17255412; }
+    .avatar { width: 64px; height: 64px; border-radius: 50%; background: #dbeafe; color: #1d4ed8; display: grid; place-items: center; font-size: 22px; font-weight: bold; margin: 0 auto 14px; }
+    h2 { font-size: 14px; margin: 0 0 10px; white-space: nowrap; }
+    .course { color: #475569; line-height: 1.5; margin: 0; font-size: 12px; }
     footer { text-align: center; padding: 24px; color: #64748b; }
   </style>
 </head>
@@ -39,8 +39,8 @@
         <p class="course">Artificial Intelligence &amp; Machine Learning</p>
       </article>
       <article class="card">
-        <div class="avatar">RV</div>
-        <h2>RAGHAVA VARMA</h2>
+        <div class="avatar">MMRV</div>
+        <h2>MANTENA MOURYA RAGHAVA VARMA</h2>
         <p class="course">Artificial Intelligence &amp; Machine Learning</p>
       </article>
       <article class="card">
