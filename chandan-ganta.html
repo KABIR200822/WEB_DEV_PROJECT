@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandan Ganta | Student Profile</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fb; color: #172033; }
+    header { background: #172554; color: white; padding: 28px 8%; text-align: center; }
+    nav { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 16px; }
+    nav a { color: #dbeafe; text-decoration: none; font-weight: 600; }
+    main { max-width: 950px; margin: 36px auto; padding: 0 20px; }
+    .hero, .panel { background: white; border-radius: 18px; padding: 28px; margin-bottom: 20px; box-shadow: 0 8px 24px #17255412; }
+    .hero { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+    .avatar { width: 88px; height: 88px; flex: 0 0 88px; border-radius: 50%; background: #dbeafe; color: #1d4ed8; display: grid; place-items: center; font-size: 28px; font-weight: bold; }
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 8px; }
+    h2 { color: #1e3a8a; margin-bottom: 14px; }
+    .muted { color: #64748b; line-height: 1.7; margin-bottom: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; }
+    .tag { background: #eff6ff; color: #1e40af; padding: 8px 12px; border-radius: 999px; font-size: 13px; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .project { border: 1px solid #e2e8f0; border-radius: 12px; padding: 17px; }
+    .project h3 { margin: 0 0 8px; font-size: 16px; }
+    .project p { color: #64748b; line-height: 1.6; font-size: 14px; margin: 0; }
+    .back { display: inline-block; color: #1d4ed8; font-weight: 600; text-decoration: none; margin: 0 0 22px; }
+    .goals { color: #64748b; line-height: 1.8; padding-left: 20px; margin-bottom: 0; }
+    footer { text-align: center; padding: 24px; color: #64748b; }
+    @media (max-width: 560px) { .hero { justify-content: center; text-align: center; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Profile</h1>
+    <p>Get to know the student behind the work</p>
+    <nav>
+      <a href="profile.html">Student Directory</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <a class="back" href="profile.html">← Back to Student Directory</a>
+    <section class="hero">
+      <div class="avatar">CG</div>
+      <div>
+        <h1>CHANDAN GANTA</h1>
+        <p class="muted">B.Tech — Computer Science &amp; Engineering<br>Specialization: Artificial Intelligence &amp; Machine Learning</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>About Me</h2>
+      <p class="muted">I am a B.Tech Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning. I am passionate about technology, programming, and problem-solving. I enjoy developing creative and practical applications, exploring emerging technologies, and turning innovative ideas into working projects. I am also interested in entrepreneurship, innovation, and collaborative development.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Technical Skills</h2>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Object-Oriented Programming</span>
+        <span class="tag">Data Structures &amp; Algorithms (Currently Learning)</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>KnowYourPlate</h3>
+          <p>A QR-based food information platform providing nutritional details, calorie information, macronutrients, and allergen awareness.</p>
+        </article>
+        <article class="project">
+          <h3>SearchGrid AI</h3>
+          <p>An aircraft-tracking platform integrating OpenSky flight data with an interactive map-based interface.</p>
+        </article>
+        <article class="project">
+          <h3>Daily Expense Tracker</h3>
+          <p>A collaborative expense-management application currently in development as a team project.</p>
+        </article>
+        <article class="project">
+          <h3>CorteXCode Hackathon</h3>
+          <p>Participated in a 12-hour hackathon focused on building innovative technology solutions using modern development tools and AI-powered platforms.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Hobbies &amp; Interests</h2>
+      <div class="tags">
+        <span class="tag">Coding &amp; Programming Challenges</span>
+        <span class="tag">Artificial Intelligence</span>
+        <span class="tag">Emerging Technologies</span>
+        <span class="tag">Creative Websites &amp; Applications</span>
+        <span class="tag">Hackathons &amp; Collaboration</span>
+        <span class="tag">Singing</span>
+        <span class="tag">Digital Content Creation</span>
+        <span class="tag">Startups &amp; Entrepreneurship</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Current Learning Goals</h2>
+      <ul class="goals">
+        <li>Strengthening Java and Python programming skills</li>
+        <li>Mastering Data Structures and Algorithms</li>
+        <li>Improving problem-solving and logical thinking</li>
+        <li>Learning full-stack web development</li>
+        <li>Exploring practical applications of AI and Machine Learning</li>
+        <li>Improving Git, GitHub, and collaborative development workflows</li>
+        <li>Building innovative projects and gaining real-world development experience</li>
+      </ul>
+    </section>
+  </main>
+  <footer>&copy; 2026 Student Profile Repository</footer>
+</body>
+</html>
