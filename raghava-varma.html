@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.M Raghava Varma | Student Profile</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fb; color: #172033; }
+    header { background: #172554; color: white; padding: 28px 8%; text-align: center; }
+    nav { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 16px; }
+    nav a { color: #dbeafe; text-decoration: none; font-weight: 600; }
+    main { max-width: 950px; margin: 36px auto; padding: 0 20px; }
+    .hero, .panel { background: white; border-radius: 18px; padding: 28px; margin-bottom: 20px; box-shadow: 0 8px 24px #17255412; }
+    .hero { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+    .avatar { width: 88px; height: 88px; flex: 0 0 88px; border-radius: 50%; background: #dbeafe; color: #1d4ed8; display: grid; place-items: center; font-size: 25px; font-weight: bold; }
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 8px; }
+    h2 { color: #1e3a8a; margin-bottom: 14px; }
+    .muted { color: #64748b; line-height: 1.7; margin-bottom: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; }
+    .tag { background: #eff6ff; color: #1e40af; padding: 8px 12px; border-radius: 999px; font-size: 13px; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .project { border: 1px solid #e2e8f0; border-radius: 12px; padding: 17px; }
+    .project h3 { margin: 0 0 8px; font-size: 16px; }
+    .project p { color: #64748b; line-height: 1.6; font-size: 14px; margin: 0; }
+    .back { display: inline-block; color: #1d4ed8; font-weight: 600; text-decoration: none; margin: 0 0 22px; }
+    .goals { color: #64748b; line-height: 1.8; padding-left: 20px; margin-bottom: 0; }
+    footer { text-align: center; padding: 24px; color: #64748b; }
+    @media (max-width: 560px) { .hero { justify-content: center; text-align: center; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Profile</h1>
+    <p>Get to know the student behind the work</p>
+    <nav>
+      <a href="profile.html">Student Directory</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <a class="back" href="profile.html">← Back to Student Directory</a>
+    <section class="hero">
+      <div class="avatar">MMRV</div>
+      <div>
+        <h1>M.M RAGHAVA VARMA</h1>
+        <p class="muted">B.Tech — Computer Science and Engineering<br>Specialization: Artificial Intelligence &amp; Machine Learning</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>About Me</h2>
+      <p class="muted">I am a B.Tech Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning. I am passionate about technology, problem-solving, and building practical solutions through programming. I enjoy exploring new technologies and collaborating with others on projects.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Technical Skills</h2>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">VS Code</span>
+      </div>
+      <p class="muted" style="margin-top:14px">Currently strengthening problem-solving skills and Data Structures &amp; Algorithms.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>KnowYourPlate</h3>
+          <p>A QR-based food platform providing nutritional information, calorie details, macronutrients, and allergen information.</p>
+        </article>
+        <article class="project">
+          <h3>SearchGrid AI</h3>
+          <p>An aircraft-tracking platform integrating OpenSky flight data with a map-based interface.</p>
+        </article>
+        <article class="project">
+          <h3>Daily Expense Tracker</h3>
+          <p>A team-based expense management application currently in development.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Hobbies &amp; Interests</h2>
+      <div class="tags">
+        <span class="tag">Emerging Technologies &amp; AI</span>
+        <span class="tag">Coding Challenges</span>
+        <span class="tag">Creative Tech Projects</span>
+        <span class="tag">Startups &amp; Entrepreneurship</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Current Learning Goals</h2>
+      <ul class="goals">
+        <li>Improving Java and Python programming skills</li>
+        <li>Learning Data Structures and Algorithms</li>
+        <li>Strengthening full-stack web development</li>
+        <li>Exploring AI/ML and practical applications of artificial intelligence</li>
+        <li>Improving problem-solving and collaborative development skills</li>
+      </ul>
+    </section>
+  </main>
+  <footer>&copy; 2026 Student Profile Repository</footer>
+</body>
+</html>
