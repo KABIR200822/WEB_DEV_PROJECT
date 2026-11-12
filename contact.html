@@ -19,7 +19,9 @@
     .member { text-align: center; }
     .avatar { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 14px; background: #dbeafe; color: #1d4ed8; font-weight: bold; font-size: 20px; }
     .member h3 { font-size: 15px; margin: 0 0 8px; }
-    .member p, .contact-card p { color: #64748b; font-size: 14px; line-height: 1.6; margin: 0; }\n    .member-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 14px; }\n    .member-links a { display: inline-block; color: #1d4ed8; background: #eff6ff; text-decoration: none; padding: 7px 10px; border-radius: 8px; font-size: 12px; font-weight: 600; }\n    .member-links a:hover { background: #dbeafe; }
+    .member p, .contact-card p { color: #64748b; font-size: 14px; line-height: 1.6; margin: 0; }\n    .member-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0; margin-top: 14px; }\n    .member-links a { display: inline-block; color: #1d4ed8; background: #eff6ff; text-decoration: none; padding: 7px 12px; font-size: 12px; font-weight: 600; }
+    .member-links a:first-child { border: 1px solid #dbeafe; border-right: 1px solid #94a3b8; border-radius: 8px 0 0 8px; }
+    .member-links a + a { border: 1px solid #dbeafe; border-left: 0; border-radius: 0 8px 8px 0; }\n    .member-links a:hover { background: #dbeafe; }
     .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
     .contact-card h3 { margin: 0 0 10px; color: #1e40af; font-size: 16px; }
     .form-card { max-width: 680px; margin: 0 auto; }
