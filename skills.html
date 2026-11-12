@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills | Student Profiles</title>
+  <title>Team Skills | Student Profiles</title>
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fb; color: #172033; }
@@ -11,24 +11,24 @@
     nav { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 16px; }
     nav a { color: #dbeafe; text-decoration: none; font-weight: 600; }
     nav a:hover { color: white; text-decoration: underline; }
-    main { max-width: 1050px; margin: 38px auto; padding: 0 20px; }
-    .intro { text-align: center; color: #475569; line-height: 1.7; max-width: 720px; margin: 0 auto 30px; }
-    .section-title { margin: 34px 0 18px; text-align: center; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
-    .card { background: white; border-radius: 16px; padding: 23px; box-shadow: 0 8px 24px #17255412; }
-    .card h3 { margin: 0 0 10px; color: #1e40af; font-size: 17px; }
-    .card p { margin: 0; color: #526176; font-size: 14px; line-height: 1.65; }
-    .level { display: inline-block; margin-top: 14px; padding: 6px 10px; border-radius: 20px; background: #dbeafe; color: #1e40af; font-size: 12px; font-weight: 700; }
-    .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-    .tag { background: white; border: 1px solid #dbe3ef; color: #334155; padding: 10px 15px; border-radius: 20px; font-size: 14px; }
-    .project { border-left: 4px solid #2563eb; }
+    main { max-width: 1150px; margin: 38px auto; padding: 0 20px; }
+    .intro { text-align: center; color: #475569; line-height: 1.7; margin: 0 auto 28px; }
+    .table-wrap { overflow-x: auto; background: white; border-radius: 16px; box-shadow: 0 8px 24px #17255412; }
+    table { width: 100%; border-collapse: collapse; min-width: 680px; }
+    th, td { padding: 20px 22px; text-align: left; vertical-align: top; border-bottom: 1px solid #e2e8f0; }
+    th { background: #eaf1ff; color: #1e3a8a; font-size: 14px; }
+    td:first-child { width: 230px; color: #172554; font-weight: 700; white-space: nowrap; }
+    td:last-child { color: #475569; line-height: 1.7; }
+    tr:last-child td { border-bottom: 0; }
+    .pending { color: #94a3b8; font-style: italic; }
     footer { text-align: center; padding: 24px; color: #64748b; }
+    @media (max-width: 600px) { header { padding: 24px 5%; } main { padding: 0 12px; } th, td { padding: 15px; } }
   </style>
 </head>
 <body>
   <header>
-    <h1>Skills &amp; Technologies</h1>
-    <p>What I know, what I have worked with, and what I am learning</p>
+    <h1>Team Skills</h1>
+    <p>A quick overview of the skills shared by our team members</p>
     <nav>
       <a href="profile.html">Profiles</a>
       <a href="skills.html">Skills</a>
@@ -37,79 +37,38 @@
   </header>
 
   <main>
-    <p class="intro">I am an Artificial Intelligence and Machine Learning student building my foundations in programming and web development through coursework and hands-on projects. This page reflects my current learning stage rather than claiming expert-level proficiency.</p>
-
-    <h2 class="section-title">Programming &amp; Web Development</h2>
-    <section class="grid">
-      <article class="card">
-        <h3>Java</h3>
-        <p>Working with variables, conditions, loops, arrays, ArrayLists, methods, recursion and basic problem-solving.</p>
-        <span class="level">Beginner · Practising</span>
-      </article>
-      <article class="card">
-        <h3>HTML</h3>
-        <p>Building structured web pages using semantic elements, links, forms and page layouts.</p>
-        <span class="level">Beginner · Hands-on</span>
-      </article>
-      <article class="card">
-        <h3>CSS</h3>
-        <p>Styling pages with selectors, spacing, Flexbox, Grid, responsive layouts and box-model concepts.</p>
-        <span class="level">Beginner · Hands-on</span>
-      </article>
-      <article class="card">
-        <h3>JavaScript</h3>
-        <p>Using basic scripting, DOM events, page interactions and API-connected project features.</p>
-        <span class="level">Learning</span>
-      </article>
-    </section>
-
-    <h2 class="section-title">Tools &amp; Technologies</h2>
-    <section class="grid">
-      <article class="card">
-        <h3>Git &amp; GitHub</h3>
-        <p>Creating repositories and branches, committing changes, pushing code, opening pull requests and merging updates.</p>
-        <span class="level">Practical experience</span>
-      </article>
-      <article class="card">
-        <h3>VS Code &amp; Terminal</h3>
-        <p>Using a code editor and command line to work on, run and manage web development projects.</p>
-        <span class="level">Used in projects</span>
-      </article>
-      <article class="card">
-        <h3>APIs &amp; Web Mapping</h3>
-        <p>Project experience connecting to the OpenSky flight data API and displaying map information with Leaflet.</p>
-        <span class="level">Project experience</span>
-      </article>
-      <article class="card">
-        <h3>AI &amp; Machine Learning</h3>
-        <p>Studying AI and ML foundations and exploring how AI-powered features can be used in practical applications.</p>
-        <span class="level">Currently learning</span>
-      </article>
-    </section>
-
-    <h2 class="section-title">Project Experience</h2>
-    <section class="grid">
-      <article class="card project">
-        <h3>FlightScope</h3>
-        <p>An aircraft-tracking project using live flight data, API integration and interactive maps to explore flight information.</p>
-      </article>
-      <article class="card project">
-        <h3>BISsetu</h3>
-        <p>A concept for checking product-label declarations and standards-related information using AI-assisted analysis.</p>
-      </article>
-      <article class="card project">
-        <h3>Student Profile Website</h3>
-        <p>A multi-page website built with HTML and CSS, with changes managed through Git branches and pull requests.</p>
-      </article>
-    </section>
-
-    <h2 class="section-title">Other Strengths &amp; Interests</h2>
-    <div class="tags">
-      <span class="tag">Problem Solving</span>
-      <span class="tag">Learning by Building</span>
-      <span class="tag">Debugging</span>
-      <span class="tag">Team Projects</span>
-      <span class="tag">Technology Exploration</span>
+    <p class="intro">The table lists all five students in the directory. Skills are included only where the student details have been provided.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>KABIR MUNI</td>
+            <td>Java, HTML, CSS, JavaScript, Git &amp; GitHub, VS Code, Terminal, REST APIs, Leaflet Maps</td>
+          </tr>
+          <tr>
+            <td>M.M RAGHAVA VARMA</td>
+            <td>Java, Python, HTML, CSS, JavaScript, Git, GitHub, VS Code; currently learning Data Structures and Algorithms</td>
+          </tr>
+          <tr>
+            <td>CHANDAN GANTA</td>
+            <td class="pending">Skills not provided</td>
+          </tr>
+          <tr>
+            <td>KARTHIK SWAMY</td>
+            <td class="pending">Skills not provided</td>
+          </tr>
+          <tr>
+            <td>SHASWAT VIBHU</td>
+            <td>Java, Python, HTML, CSS, JavaScript (Beginner), FastAPI (Basics), AI/ML Fundamentals, Data Structures and Algorithms (Learning), Git &amp; GitHub</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </main>
 
