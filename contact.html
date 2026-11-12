@@ -3,38 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Student</title>
+  <title>Contact | Student Profiles</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f3f6fb;color:#172033}
-    header{background:#172554;color:white;padding:28px 8%;text-align:center}
-    nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:16px}
-    nav a{color:#dbeafe;text-decoration:none;font-weight:600}
-    main{max-width:700px;margin:40px auto;padding:0 20px}
-    .card{background:white;border-radius:16px;padding:32px;box-shadow:0 8px 24px #17255412}
-    h2{text-align:center}.contact-item{padding:16px;margin:14px 0;background:#f8fafc;border-radius:10px}
-    .contact-item strong{display:block;color:#1e40af;margin-bottom:6px}
-    a{color:#2563eb;text-decoration:none}footer{text-align:center;padding:24px;color:#64748b}
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fb; color: #172033; }
+    header { background: #172554; color: white; padding: 28px 8%; text-align: center; }
+    nav { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 16px; }
+    nav a { color: #dbeafe; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: white; text-decoration: underline; }
+    main { max-width: 1050px; margin: 38px auto; padding: 0 20px; }
+    .intro { text-align: center; color: #475569; line-height: 1.7; margin-bottom: 28px; }
+    .section-title { text-align: center; margin: 34px 0 18px; }
+    .team { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .member, .contact-card, .form-card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 8px 24px #17255412; }
+    .member { text-align: center; }
+    .avatar { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 14px; background: #dbeafe; color: #1d4ed8; font-weight: bold; font-size: 20px; }
+    .member h3 { font-size: 15px; margin: 0 0 8px; }
+    .member p, .contact-card p { color: #64748b; font-size: 14px; line-height: 1.6; margin: 0; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .contact-card h3 { margin: 0 0 10px; color: #1e40af; font-size: 16px; }
+    .form-card { max-width: 680px; margin: 0 auto; }
+    label { display: block; font-weight: 600; font-size: 14px; margin: 16px 0 7px; }
+    input, textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 9px; font: inherit; }
+    textarea { min-height: 120px; resize: vertical; }
+    button { margin-top: 16px; border: 0; border-radius: 9px; padding: 12px 20px; background: #1d4ed8; color: white; font-weight: 600; cursor: pointer; }
+    .note { color: #64748b; font-size: 12px; line-height: 1.5; margin-top: 12px; }
+    footer { text-align: center; padding: 24px; color: #64748b; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Contact</h1>
-    <p>Get in touch</p>
+    <h1>Contact the Team</h1>
+    <p>Connect with the students behind this project</p>
     <nav>
-      <a href="profile.html">Profile</a>
+      <a href="profile.html">Profiles</a>
       <a href="skills.html">Skills</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <section class="card">
-      <h2>Contact Information</h2>
-      <p class="contact-item"><strong>Email</strong><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p class="contact-item"><strong>GitHub</strong><a href="https://github.com/your-username">github.com/your-username</a></p>
-      <p class="contact-item"><strong>Location</strong>Your City, India</p>
-      <p class="contact-item"><strong>Availability</strong>Open to learning opportunities and collaborative student projects.</p>
+    <p class="intro">Have a question or an idea to share? Explore the team members below or use the contact form template.</p>
+
+    <h2 class="section-title">Our Team</h2>
+    <section class="team" aria-label="Team members">
+      <article class="member"><div class="avatar">KM</div><h3>KABIR MUNI</h3><p>AI &amp; ML Student</p></article>
+      <article class="member"><div class="avatar">MMRV</div><h3>M.M RAGHAVA VARMA</h3><p>AI &amp; ML Student</p></article>
+      <article class="member"><div class="avatar">CG</div><h3>CHANDAN GANTA</h3><p>AI &amp; ML Student</p></article>
+      <article class="member"><div class="avatar">KS</div><h3>KARTHIK SWAMY</h3><p>AI &amp; ML Student</p></article>
+      <article class="member"><div class="avatar">SV</div><h3>SHASWAT VIBHU</h3><p>AI &amp; ML Student</p></article>
+    </section>
+
+    <h2 class="section-title">Project Contact</h2>
+    <section class="contact-grid">
+      <article class="contact-card"><h3>Project</h3><p>Student Profile Website<br>Built with HTML, CSS, Git and GitHub.</p></article>
+      <article class="contact-card"><h3>Repository</h3><p>View the source code and project updates on GitHub.</p><p><a href="https://github.com/KABIR200822/WEB_DEV_PROJECT" target="_blank" rel="noopener noreferrer">Open project repository</a></p></article>
+      <article class="contact-card"><h3>Collaboration</h3><p>Use this page as a starting point for project questions, feedback and collaboration requests.</p></article>
+    </section>
+
+    <h2 class="section-title">Send a Message</h2>
+    <section class="form-card">
+      <form id="contact-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+        <button type="submit">Preview message</button>
+        <p class="note">Demo form: this page does not send or store messages. A backend or email service must be connected to receive submissions.</p>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
+
   <footer>&copy; 2026 Student Profile Repository</footer>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      document.getElementById("form-status").textContent =
+        "Message preview ready, " + name + ". This demo does not send the message.";
+    });
+  </script>
 </body>
 </html>
