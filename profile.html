@@ -13,10 +13,12 @@
     main { max-width: 100%; margin: 40px auto; padding: 0 20px; overflow-x: auto; }
     .intro { text-align: center; line-height: 1.7; color: #475569; margin-bottom: 28px; }
     .profiles { display: grid; grid-template-columns: repeat(5, minmax(260px, 1fr)); min-width: 1400px; gap: 18px; }
-    .card { background: white; border-radius: 16px; padding: 30px 18px; text-align: center; box-shadow: 0 8px 24px #17255412; }
+    .card { display: block; background: white; color: inherit; text-decoration: none; border-radius: 16px; padding: 30px 18px; text-align: center; box-shadow: 0 8px 24px #17255412; transition: transform .18s, box-shadow .18s; }
+    .card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: 0 12px 28px #17255424; outline: 2px solid #93c5fd; }
     .avatar { width: 64px; height: 64px; border-radius: 50%; background: #dbeafe; color: #1d4ed8; display: grid; place-items: center; font-size: 22px; font-weight: bold; margin: 0 auto 14px; }
     h2 { font-size: 15px; margin: 0 0 10px; white-space: nowrap; }
     .course { color: #475569; line-height: 1.5; margin: 0; font-size: 12px; }
+    .view-profile { display: block; margin-top: 16px; color: #1d4ed8; font-size: 13px; font-weight: 700; }
     footer { text-align: center; padding: 24px; color: #64748b; }
   </style>
 </head>
@@ -31,13 +33,14 @@
     </nav>
   </header>
   <main>
-    <p class="intro">A collection of student profiles from BOSSCODER School of Technology.</p>
+    <p class="intro">A collection of student profiles from BOSSCODER School of Technology. Select a profile to view more details.</p>
     <section class="profiles" aria-label="Student profiles">
-      <article class="card">
+      <a class="card" href="kabir.html" aria-label="View Kabir Muni's profile">
         <div class="avatar">KM</div>
         <h2>KABIR MUNI</h2>
         <p class="course">Artificial Intelligence &amp; Machine Learning</p>
-      </article>
+        <span class="view-profile">View Profile →</span>
+      </a>
       <article class="card">
         <div class="avatar">MMRV</div>
         <h2>M.M RAGHAVA VARMA</h2>
