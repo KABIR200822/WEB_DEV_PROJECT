@@ -60,7 +60,7 @@ No build tools or package installation are required.
    python3 -m http.server 8000
    ```
 
-4. Open this address in your browser:
+4. Open this address in your broswer:
 
    ```
    http://localhost:8000/profile.html
