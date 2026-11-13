@@ -23,6 +23,7 @@ The website provides a simple way to explore the team and learn about each membe
 | `kabir.html` | Kabir Muni's profile |
 | `raghava-varma.html` | M. M. Raghava Varma's profile |
 | `chandan-ganta.html` | Chandan Ganta's profile |
+| `karthik-swamy.html` | Karthik Swamy's profile |
 | `shaswat-vibhu.html` | Shaswat Vibhu's profile |
 | `skills.html` | Team skills overview |
 | `contact.html` | Contact details and message preview |
@@ -75,7 +76,14 @@ WEB_DEV_PROJECT/
 ├── kabir.html
 ├── raghava-varma.html
 ├── chandan-ganta.html
+├── karthik-swamy.html
 ├── shaswat-vibhu.html
+├── kabir.css
+├── raghava-varma.css
+├── chandan-ganta.css
+├── karthik-swamy.css
+├── shaswat-vibhu.css
+├── styles.css
 ├── skills.html
 ├── contact.html
 └── README.md
